@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <title>Gehra Hua – Lyrics | Arijit Singh</title>
+  <meta
+    name="description"
+    content="Gehra Hua (From Dhurandhar) - Arijit Singh. Stream the video and read the full lyrics in a clean, modern, dark/light themed interface."
+  />
+
+  <!-- Modern, stylish fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-alt: rgba(11, 16, 32, 0.9);
+      --bg-elevated: rgba(18, 25, 48, 0.95);
+      --text: #e5e7eb;
+      --text-soft: #9ca3af;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --accent-2: #a855f7;
+      --border-subtle: rgba(148, 163, 184, 0.35);
+      --shadow-soft: 0 20px 40px rgba(15, 23, 42, 0.65);
+      --radius-xl: 1.4rem;
+      --radius-pill: 999px;
+      --transition-fast: 180ms ease-out;
+      --transition-slow: 260ms ease-out;
+      --blur-strong: 18px;
+    }
+
+    html[data-theme="light"] {
+      --bg: #f3f4f6;
+      --bg-alt: rgba(255, 255, 255, 0.9);
+      --bg-elevated: rgba(255, 255, 255, 0.98);
+      --text: #020617;
+      --text-soft: #4b5563;
+      --accent: #2563eb;
+      --accent-soft: rgba(37, 99, 235, 0.08);
+      --accent-2: #db2777;
+      --border-subtle: rgba(148, 163, 184, 0.35);
+      --shadow-soft: 0 20px 40px rgba(15, 23, 42, 0.12);
+      --blur-strong: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.16), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.18), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      transition:
+        background-color var(--transition-slow),
+        color var(--transition-slow),
+        background-image 400ms ease-out;
+    }
+
+    .grain {
+      position: fixed;
+      inset: -20px;
+      pointer-events: none;
+      opacity: 0.16;
+      mix-blend-mode: soft-light;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='noStitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+      z-index: -1;
+    }
+
+    .page {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(
+          130deg,
+          rgba(15, 23, 42, 0.9),
+          rgba(15, 23, 42, 0.8)
+        );
+      backdrop-filter: blur(var(--blur-strong));
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    html[data-theme="light"] header {
+      background: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0.96),
+        rgba(249, 250, 251, 0.96)
+      );
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 30%;
+      background:
+        conic-gradient(from 220deg, var(--accent), var(--accent-2), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      border-radius: inherit;
+      background: radial-gradient(circle at 30% 0%, rgba(255, 255, 255, 0.32), transparent 55%);
+      mix-blend-mode: screen;
+    }
+
+    .brand-mark span {
+      position: relative;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      color: #0b1020;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-title {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-sub {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pill {
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: radial-gradient(circle at 0 0, rgba(248, 250, 252, 0.15), transparent 55%);
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #bbf7d0, #22c55e);
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.18);
+    }
+
+    .theme-toggle {
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      padding: 4px;
+      background: radial-gradient(circle at 0 0, rgba(248, 250, 252, 0.14), transparent 60%);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      min-width: 86px;
+      justify-content: space-between;
+    }
+
+    .theme-toggle span {
+      flex: 1;
+      text-align: center;
+      font-size: 0.74rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      z-index: 2;
+      user-select: none;
+    }
+
+    .theme-toggle .thumb {
+      position: absolute;
+      width: 50%;
+      inset-block: 3px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      transform: translateX(0%);
+      transition: transform var(--transition-fast);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.7);
+      z-index: 1;
+    }
+
+    html[data-theme="light"] .theme-toggle .thumb {
+      transform: translateX(100%);
+    }
+
+    .theme-icon {
+      font-size: 0.95rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero {
+      padding: 20px 18px 18px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(
+        130deg,
+        var(--bg-elevated),
+        rgba(15, 23, 42, 0.55)
+      );
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(var(--blur-strong));
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.24), transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.18), transparent 60%);
+      opacity: 0.6;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .hero-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hero-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .tag {
+      padding: 3px 9px;
+      border-radius: var(--radius-pill);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background: rgba(15, 23, 42, 0.72);
+      color: var(--text-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(18px);
+    }
+
+    html[data-theme="light"] .tag {
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    .tag-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero-title {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: clamp(1.7rem, 4vw, 2.1rem);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      align-items: baseline;
+      margin-top: 4px;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .meta span.label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      opacity: 0.8;
+    }
+
+    .meta strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .hero-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pill-ghost {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px dashed rgba(148, 163, 184, 0.4);
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(16px);
+    }
+
+    html[data-theme="light"] .pill-ghost {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .pill-ghost svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.4fr);
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 830px) {
+      header {
+        padding-inline: 12px;
+      }
+
+      .layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding-inline: 10px;
+      }
+
+      header {
+        padding-inline: 10px;
+      }
+
+      .hero {
+        padding-inline: 14px;
+      }
+    }
+
+    .card {
+      border-radius: var(--radius-xl);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 14px 14px 16px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(18px);
+      transform-origin: center;
+      animation: floatIn 480ms var(--transition-slow) both;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0 0, var(--accent-soft), transparent 55%);
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .card-inner {
+      position: relative;
+    }
+
+    .card:nth-of-type(2)::before {
+      background: radial-gradient(circle at 100% 0, var(--accent-soft), transparent 60%);
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-title::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      opacity: 0.9;
+    }
+
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-soft);
+      background: rgba(15, 23, 42, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    html[data-theme="light"] .badge {
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* Responsive YouTube player */
+    .player-shell {
+      border-radius: calc(var(--radius-xl) - 6px);
+      padding: 10px;
+      background: radial-gradient(circle at 0 0, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.98));
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .player-shell::after {
+      content: "";
+      position: absolute;
+      inset-inline: 60%;
+      inset-block: -40%;
+      background: radial-gradient(circle at 0 50%, rgba(248, 250, 252, 0.35), transparent 65%);
+      opacity: 0.18;
+      transform: rotate(-28deg);
+      pointer-events: none;
+    }
+
+    .player-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.78rem;
+      color: #e5e7eb;
+      opacity: 0.8;
+    }
+
+    .player-meta span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .player-chip {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .player-viewport {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      box-shadow: 0 16px 40px rgba(30, 64, 175, 0.75);
+    }
+
+    .aspect {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+    .aspect iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: inherit;
+    }
+
+    .lyrics-shell {
+      max-height: clamp(360px, 60vh, 520px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .lyrics-scroll {
+      max-height: inherit;
+      padding: 8px 2px 6px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent) transparent;
+      mask-image: linear-gradient(to bottom, transparent 0, #000 12px, #000 calc(100% - 20px), transparent 100%);
+    }
+
+    .lyrics-scroll::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    .lyrics-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .lyrics-scroll::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--accent), var(--accent-2));
+      border-radius: 999px;
+    }
+
+    .lyrics-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-bottom: 10px;
+    }
+
+    .lyrics-meta span strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .lyrics {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      white-space: pre-line;
+    }
+
+    .lyrics-block {
+      margin-bottom: 1rem;
+    }
+
+    .lyrics-line {
+      display: block;
+    }
+
+    .lyrics-highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .lyrics-echo {
+      opacity: 0.96;
+      font-style: italic;
+    }
+
+    .lyrics-hook {
+      background: radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.15), transparent 60%);
+      padding: 0.35rem 0.6rem;
+      border-radius: 0.7rem;
+      margin-left: -0.4rem;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px 6px 0;
+      font-size: 0.72rem;
+      color: var(--text-soft);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px;
+      opacity: 0.75;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span>Ly</span>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">Midnight Lyrics</div>
+          <div class="brand-sub">Elegant lyrics in cinematic dark mode</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span>Single · Gehra Hua</span>
+        </div>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle light and dark mode"
+        >
+          <div class="thumb"></div>
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+          <span>Night</span>
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-tag-row">
+            <div class="tag">
+              <span class="tag-dot"></span>
+              <span>Now Playing</span>
+            </div>
+            <div class="tag">
+              <span class="tag-dot"></span>
+              <span>Hindi · Romance</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            <span>Gehra Hua</span> – From “Dhurandhar”
+          </h1>
+
+          <div class="meta">
+            <span class="label">Artist</span>
+            <strong>Arijit Singh</strong>
+            <span class="label">Music</span>
+            <strong>Shashwat Sachdev</strong>
+            <span class="label">Lyrics</span>
+            <strong>Irshad Kamil</strong>
+          </div>
+
+          <div class="hero-foot">
+            <div class="pill-ghost">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 3a7 7 0 0 0-7 7v3.586l-.707.707A1 1 0 0 0 5 16h14a1 1 0 0 0 .707-1.707L19 13.586V10a7 7 0 0 0-7-7Zm0 18a3 3 0 0 0 2.995-2.824L15 18h-6a3 3 0 0 0 3 3Z"
+                />
+              </svg>
+              Best with headphones in the dark ✨
+            </div>
+            <span class="pill" aria-hidden="true">
+              <span class="pill-dot"></span>
+              <span>Auto-save theme</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout" aria-label="Player and lyrics">
+        <!-- PLAYER -->
+        <article class="card" aria-label="Video player">
+          <div class="card-inner">
+            <div class="card-header">
+              <div class="card-title">Video</div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span>YouTube Embed</span>
+              </div>
+            </div>
+
+            <div class="player-shell">
+              <div class="player-meta">
+                <span title="Gehra Hua (From Dhurandhar)">Gehra Hua · Official Video</span>
+                <span class="player-chip">
+                  ▶ Watch in-frame
+                </span>
+              </div>
+
+              <div class="player-viewport">
+                <div class="aspect">
+                  <!-- Replace src with any other Gehra Hua video link if you like -->
+                  <iframe
+                    src="https://www.youtube.com/embed/Y8MfwbosPlE"
+                    title="Gehra Hua (From Dhurandhar) - Arijit Singh"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LYRICS -->
+        <article class="card" aria-label="Song lyrics">
+          <div class="card-inner lyrics-shell">
+            <div class="card-header">
+              <div class="card-title">Lyrics</div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Romantic · Hindi</span>
+              </div>
+            </div>
+
+            <div class="lyrics-meta">
+              <span><strong>Song:</strong> Gehra Hua (From “Dhurandhar”)</span>
+              <span><strong>Artist:</strong> Arijit Singh</span>
+            </div>
+
+            <div class="lyrics-scroll" aria-label="Scrollable lyrics">
+              <div class="lyrics">
+                <!-- BLOCK 1 -->
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Tu agar meri, yeh hawaien teri</span>
+                  <span class="lyrics-line">Tu agar meri, saari raahein teri</span>
+                  <span class="lyrics-line">Tu agar meri, main hoon tera</span>
+                  <span class="lyrics-line">Tu agar meri, yeh ujaale tere</span>
+                  <span class="lyrics-line">Tu agar meri, dil hawaale tere</span>
+                  <span class="lyrics-line">Tu agar meri, main hoon tera</span>
+                </div>
+
+                <!-- BLOCK 2 -->
+                <div class="lyrics-block lyrics-hook">
+                  <span class="lyrics-line lyrics-highlight">
+                    Betaab sa, mohabbat ka yeh inqalaab hai
+                  </span>
+                  <span class="lyrics-line">
+                    Mera jahaan, teri baahon mein khwaab khwaab hai
+                  </span>
+                </div>
+
+                <!-- HOOK / CHORUS -->
+                <div class="lyrics-block lyrics-echo">
+                  <span class="lyrics-line">Ghera huaaaa, ghera huaaa</span>
+                  <span class="lyrics-line">Rang ashiqui, gheraaa hua</span>
+                  <span class="lyrics-line">Ghera huaaaa, ghera huaaa</span>
+                  <span class="lyrics-line">Teri yaad duaa, gheraaa hua</span>
+                  <span class="lyrics-line">Tera hua</span>
+                </div>
+
+                <!-- REFRAIN -->
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Tu agar meri, yeh hawaien teri</span>
+                  <span class="lyrics-line">Tu agar meri, saari raahein teri</span>
+                  <span class="lyrics-line">Tu agar meri, main hoon tera</span>
+                </div>
+
+                <!-- BLOCK 3 -->
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Palke jhapakta, hain aasmaan</span>
+                  <span class="lyrics-line">Laakhon farishton ki hai tu jaan</span>
+                  <span class="lyrics-line">Woh poochte hain rehti kahaan?</span>
+                  <span class="lyrics-line">
+                    Meri baahon mein rehti, unko bataan
+                  </span>
+                </div>
+
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Palke jhapakta, hain aasmaan</span>
+                  <span class="lyrics-line">Usne bhi tujhsa dekha? kahaan?</span>
+                  <span class="lyrics-line">Hain raunakein wahaan, tu hai jahaan</span>
+                  <span class="lyrics-line">
+                    Meri baahon mein rehna, yahi hai duaa
+                  </span>
+                </div>
+
+                <!-- BLOCK 4 -->
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Tu agar meri, hain fasaanan tera</span>
+                  <span class="lyrics-line">Tu agar meri, to zamaana tera</span>
+                  <span class="lyrics-line">Tu agar meri, main hoon tera</span>
+                </div>
+
+                <div class="lyrics-block lyrics-hook">
+                  <span class="lyrics-line lyrics-highlight">
+                    Betaab sa, mohabbat ka yeh inqalaab hai
+                  </span>
+                  <span class="lyrics-line">
+                    Mera jahaan, teri baahon mein khwaab khwaab hai
+                  </span>
+                </div>
+
+                <div class="lyrics-block lyrics-echo">
+                  <span class="lyrics-line">Ghera huaaaa, ghera huaaa</span>
+                  <span class="lyrics-line">Rang ashiqui, gheraaa hua</span>
+                  <span class="lyrics-line">Tera hua</span>
+                </div>
+
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Tu agar meri, yeh hawaien teri</span>
+                  <span class="lyrics-line">Tu agar meri, saari raahein teri</span>
+                  <span class="lyrics-line">Tu agar meri, main hoon tera</span>
+                </div>
+
+                <!-- BLOCK 5 - BRIDGE -->
+                <div class="lyrics-block">
+                  <span class="lyrics-line">
+                    Teri mohabbat mein jalna bhi hai
+                  </span>
+                  <span class="lyrics-line">
+                    Aur tujhse bachkar bhi chalna bhi hai
+                  </span>
+                  <span class="lyrics-line">
+                    Kuch rang apna badalna bhi hai
+                  </span>
+                  <span class="lyrics-line">
+                    Maine dhalna tere rang mein hai sada
+                  </span>
+                </div>
+
+                <div class="lyrics-block">
+                  <span class="lyrics-line">Tu chaand, main ek dhadakta hua</span>
+                  <span class="lyrics-line">Choori se mujhko hi takta hua</span>
+                  <span class="lyrics-line">Seene se lagke chamakta hua</span>
+                  <span class="lyrics-line">
+                    Meri jannat ka rastaa, tu hi to huaan
+                  </span>
+                </div>
+
+                <!-- FINAL HOOK -->
+                <div class="lyrics-block lyrics-hook">
+                  <span class="lyrics-line lyrics-highlight">
+                    Tu agar meri, yeh hawaien teri
+                  </span>
+                  <span class="lyrics-line">
+                    Tu agar meri, saari raahein teri
+                  </span>
+                  <span class="lyrics-line">
+                    Tu agar meri, main hoon tera
+                  </span>
+                </div>
+
+                <div class="lyrics-block lyrics-echo">
+                  <span class="lyrics-line">
+                    Betaab sa, mohabbat ka yeh inqalaab hai
+                  </span>
+                  <span class="lyrics-line">
+                    Mera jahaan, teri baahon mein khwaab khwaab hai
+                  </span>
+                  <span class="lyrics-line">Ghera huaaaa, ghera huaaa</span>
+                  <span class="lyrics-line">Rang ashiqui, gheraaa hua</span>
+                  <span class="lyrics-line">Ghera huaaaa, ghera huaaa</span>
+                  <span class="lyrics-line">
+                    Dariyaan duaan, gheraaa hua
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Built for static hosting (GitHub Pages ready).</span>
+      <span>Toggle your favourite theme and enjoy the lyrics.</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector(".theme-toggle");
+      const THEME_KEY = "midnight-lyrics-theme";
+
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+      }
+
+      function setTheme(theme) {
+        applyTheme(theme);
+        try {
+          localStorage.setItem(THEME_KEY, theme);
+        } catch (e) {
+          // ignore if storage blocked
+        }
+      }
+
+      // Load from storage or system preference
+      (function initTheme() {
+        let stored;
+        try {
+          stored = localStorage.getItem(THEME_KEY);
+        } catch (e) {
+          stored = null;
+        }
+
+        if (stored === "light" || stored === "dark") {
+          applyTheme(stored);
+        } else {
+          const prefersDark = window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          applyTheme(prefersDark ? "dark" : "light");
+        }
+      })();
+
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          const current = root.getAttribute("data-theme") || "dark";
+          const next = current === "dark" ? "light" : "dark";
+          setTheme(next);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
